@@ -1,0 +1,17 @@
+node_modules
+.next
+out
+.git
+.env.local
+.env*.local
+test-csvs
+README.md
+tests
+.dockerignore
+Dockerfile
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea
+.vscode
