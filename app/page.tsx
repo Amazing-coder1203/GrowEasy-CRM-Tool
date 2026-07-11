@@ -23,11 +23,10 @@ export default function Home() {
   // Load initial theme on mount
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
-    if (savedTheme === "dark" || savedTheme === "light") {
-      setTheme(savedTheme);
+    if (savedTheme === "dark") {
+      setTheme("dark");
     } else {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setTheme(prefersDark ? "dark" : "light");
+      setTheme("light");
     }
   }, []);
 
